@@ -4,7 +4,7 @@
 makeCacheMatrix <- function(x = matrix()) {
   invM <- NULL ## the cached inverse matrix
   
-  ## if matrix is changed with set function, invV is reset to NULL
+  ## if matrix is changed with set function, invM is reset to NULL
   set <- function(y) {
     x <<- y
     invM <<- NULL
